@@ -16,13 +16,17 @@ int main(int argc, char * argv[]){
         fprintf (stderr, "Fork Failed");
         return 1;
     } else if (pid == 0) {  /* child process*/
+        printf("[FILHO] Iniciando Tarefa");
         execlp("/bin/ls", "ls", NULL);
     } else { /* parent process*/
         /* parent will wait for the cild to complete*/
+        printf("Processo PAI entrando em espera\n");
         wait(NULL);
-        printf("/-/-/-/-/-/-/-/-/-/-/\n");
+        printf("/-/-/-/-/-/-/-/-\n");
         printf("|Child Complete|\n");
-        printf("/-/-/-/-/-/-/-/-/-/-/\n");
+        printf("/-/-/-/-/-/-/-/-\n");
     }
+    printf("[CODIGO COMUN] Finalizando \n");
+    printf("/-/-/-/-/-/-/-/-\n");
     return 0;
 }

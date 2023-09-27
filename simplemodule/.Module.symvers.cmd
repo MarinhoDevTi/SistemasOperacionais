@@ -1,0 +1,1 @@
+cmd_/home/marinhotech/Documentos/simplemodule/Module.symvers := sed 's/\.ko$$/\.o/' /home/marinhotech/Documentos/simplemodule/modules.order | scripts/mod/modpost -m -a  -o /home/marinhotech/Documentos/simplemodule/Module.symvers -e -i Module.symvers   -T -

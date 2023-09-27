@@ -1,0 +1,1 @@
+cmd_/home/marinhotech/Documentos/simplemodule/simple.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/marinhotech/Documentos/simplemodule/simple.ko /home/marinhotech/Documentos/simplemodule/simple.o /home/marinhotech/Documentos/simplemodule/simple.mod.o;  true

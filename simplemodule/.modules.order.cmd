@@ -1,0 +1,1 @@
+cmd_/home/marinhotech/Documentos/simplemodule/modules.order := {   echo /home/marinhotech/Documentos/simplemodule/simple.ko; :; } | awk '!x[$$0]++' - > /home/marinhotech/Documentos/simplemodule/modules.order

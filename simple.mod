@@ -1,0 +1,2 @@
+/media/marinhotech/DADOSDIOGO/AnaliseDesenvolvimentoSistemas/codigos/04_Quarto_periodo/SistemasOperacionais/simple.o
+

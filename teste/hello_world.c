@@ -2,6 +2,7 @@
 #include <sys/wait.h>
 #include <stdio.h>
 #include <unistd.h>
+#include<wait.h>
 
 
 
@@ -16,14 +17,14 @@ int main(int argc, char * argv[]){
         fprintf (stderr, "Fork Failed");
         return 1;
     } else if (pid == 0) {  /* child process*/
-        printf("[FILHO] Iniciando Tarefa");
-        execlp("/bin/ls", "ls", NULL);
+        printf("[FILHO ] EXECUTANDO AQUI .......\n");
+        //execlp("/bin/ls", "ls", NULL);
     } else { /* parent process*/
         /* parent will wait for the cild to complete*/
-        printf("Processo PAI entrando em espera\n");
-        wait(NULL);
+        printf("[PAI] Executando este trecho....\n");
+        //wait(NULL);
         printf("/-/-/-/-/-/-/-/-\n");
-        printf("|Child Complete|\n");
+        printf("[PAI] Processo filho terminou ... continua ...|\n");
         printf("/-/-/-/-/-/-/-/-\n");
     }
     printf("[CODIGO COMUN] Finalizando \n");

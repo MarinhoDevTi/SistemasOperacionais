@@ -5,6 +5,7 @@
                         for (i = 0; i < 4; i++) {
                              fork();
                              // ?????
+                             return 0;
                         }
-                        return 0;
+                        
                    }
